@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel Explorer</title>
+</head>
+<body>
+    <header>
+         <h1 id="main-heading">Travel Explorer</h1>
+        <nav>
+            <ul>
+               <li><a href="#" onclick="exploreNearby('restaurants')">Restaurants</a></li>
+                <li><a href="#" onclick="exploreNearby('transportation')">Transportation</a></li>
+                <li><a href="#" onclick="exploreNearby('beautiful-areas')">Areas</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+       <section id="nearby-restaurants" class="section">
+        <h2>Nearby Restaurants</h2>
+        <p>Explore a variety of eco-friendly restaurants near your location. Taste delicious dishes while being mindful of your environmental impact.</p>
+        <div class="image-container">
+            <a href="https://www.google.com/maps/search/nearby+restaurants/">
+                <img src="https://assets.architecturaldigest.in/photos/600847e8274aca243711c8d3/16:9/w_1280,c_limit/restaurant-karjat-eco-friendly-1366x768.jpg" width="1000px" height="300px" alt="Eco-friendly Restaurant">
+            </a>
+        </div>
+        <!-- You can add more images or other content here -->
+    </section>
+
+
+      <section id="transportation-facility" class="section">
+        <h2>Transportation Facility</h2>
+        <p>Discover green transportation options including electric vehicles, bike-sharing programs, and eco-friendly public transport. Travel with minimal environmental impact.</p>
+        <div class="image-container">
+            <a href="https://www.google.com/maps/search/nearby+transportation/">
+                <img src="https://img4.teletype.in/files/f4/b4/f4b44771-40c4-4fdf-804d-da71f58c073b.jpeg" width="1000px" height="300px" alt="Eco-friendly Transportation">
+            </a>
+        </div>
+        <!-- You can add more images or other content here -->
+    </section>
+
+    <section id="beautiful-areas" class="section">
+        <h2>Beautiful Areas to Visit</h2>
+        <p>Immerse yourself in the beauty of nature by exploring nearby scenic areas. From breathtaking landscapes to serene parks, there's something for every nature lover.</p>
+        <div class="image-container">
+            <a href="https://www.google.com/maps/search/nearby+beautiful+areas/">
+                <img src="https://blog.thomascook.in/wp-content/uploads/2017/01/Four-seasons-Bora-Bora-yexplore.travel-1024x768.jpg"  width="1000px" height="300px" alt="Beautiful Scenic Area">
+            </a>
+        </div>
+        <!-- You can add more images or other content here -->
+    </section>
+
+    <section id="contact-us" class="section">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Feel free to reach out to nearby contacts. Click the buttons below to find them on Google Maps with your live location!</p>
+        <button onclick="findNearbyContacts('restaurants')">Find Nearby Restaurants</button>
+        <button onclick="findNearbyContacts('transportation')">Find Nearby Transportation</button>
+    </section>
+
+<section id="feedback" class="section">
+        <h2>Feedback</h2>
+        <p>We value your feedback! Share your thoughts and suggestions about your travel experiences with us. Your input helps us improve and create a better travel experience for everyone.</p>
+        <button onclick="sendFeedback()">Send Feedback</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
