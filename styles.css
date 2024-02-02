@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2,h1{
+	font-size:40px;
+	color:purple;
+}
+p{
+	font-size:20px;
+}
+/* Your existing styles... */
+
+h1#main-heading {
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+h1#main-heading:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+    animation: shake 0.5s ease; /* Add a shake animation on click */
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 60% {
+        transform: translateX(-5px);
+    }
+    40%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+
+
+
+header {
+    background-color: #4CAF50;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: black;
+}
+
+/* Your existing styles... */
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 30%; /* Adjust the width as needed */
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Add the transition property for animation */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+/* Add your styles for individual sections as needed */
+/* Your existing styles... */
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+/* Add more styles as needed */
