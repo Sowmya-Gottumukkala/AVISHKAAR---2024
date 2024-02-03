@@ -3,15 +3,31 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	background-image: url('https://img.freepik.com/free-photo/green-light-green-blur-gradient-background_1258-83068.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
 }
 
 h2,h1{
 	font-size:40px;
 	color:purple;
 }
+
+h3
+{
+	font-size:30px;
+	color:purple;
+}
 p{
 	font-size:20px;
 }
+
+.intro-text {
+            font-size: 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 /* Your existing styles... */
 
 h1#main-heading {
@@ -51,26 +67,32 @@ header {
 }
 
 nav {
-    text-align: center;
-}
+            text-align: center;
+        }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
 
-nav li {
-    display: inline-block;
-    margin: 0 15px;
-}
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+            transition: color 0.3s ease-in-out; /* Adding a color transition effect */
+        }
 
-nav a {
-    text-decoration: none;
-    color: purple;
-    font-weight: bold;
-}
+        nav a {
+            text-decoration: none;
+            color: purple;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out; /* Adding a color transition effect */
+        }
+
+        nav a:hover {
+            color: #663399; /* Change the color on hover */
+        }
 
 
 .section {
@@ -124,5 +146,21 @@ button {
 button:hover {
     background-color: #45a049; /* Darker green color on hover */
 }
+#feedbackForm {
+        text-align: center;
+    }
 
+    #feedbackForm label {
+        display: block;
+        margin: 10px auto;
+    }
+
+    #feedbackMessage {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    #feedbackForm button {
+        margin: 10px auto;
+    }
 /* Add more styles as needed */
