@@ -11,16 +11,29 @@
          <h1 id="main-heading">Travel Explorer</h1>
         <nav>
             <ul>
-               <li><a href="#" onclick="exploreNearby('restaurants')">Restaurants</a></li>
-                <li><a href="#" onclick="exploreNearby('transportation')">Transportation</a></li>
-                <li><a href="#" onclick="exploreNearby('beautiful-areas')">Areas</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
-                <li><a href="#feedback">Feedback</a></li>
-            </ul>
+            <li><a href="#" onclick="redirectToGoogleMaps('restaurants')">Restaurants</a></li>
+            <li><a href="#" onclick="redirectToGoogleMaps('transportation')">Transportation</a></li>
+            <li><a href="#" onclick="redirectToGoogleMaps('beautiful-areas')">Areas</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
         </nav>
     </header>
 	
 	<br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	
+	<section id="intro" class="section">
+        <div class="intro-text">
+            <h2>Welcome to EcoVoyage: Sustainable Travel Planner</h2>
+            <p>Discover a world of eco-friendly travel experiences that go beyond the ordinary. Immerse yourself in breathtaking landscapes, savor delicious dishes from sustainable restaurants, and embark on eco-conscious journeys. Your adventure begins here.</p><br>
+        </div>
+        <div class="image-container">
+            <a href="https://www.google.com/maps/search/" target="_blank">
+                <img src="https://img.freepik.com/premium-photo/mountainous-environments-with-mountains-you-can-see-remote-highway-from-car-driving_1417-22278.jpg" alt="Eco-friendly Restaurant">
+            </a>
+        </div>
+    </section>
        <section id="nearby-restaurants" class="section">
         <h2>Nearby Restaurants</h2>
         <p>Explore a variety of eco-friendly restaurants near your location. Taste delicious dishes while being mindful of your environmental impact.</p>
@@ -60,13 +73,19 @@
         <p>Have questions or need assistance? Feel free to reach out to nearby contacts. Click the buttons below to find them on Google Maps with your live location!</p>
         <button onclick="findNearbyContacts('restaurants')">Find Nearby Restaurants</button>
         <button onclick="findNearbyContacts('transportation')">Find Nearby Transportation</button>
-    </section>
+    </section><br><br>
 
 <section id="feedback" class="section">
-        <h2>Feedback</h2>
-        <p>We value your feedback! Share your thoughts and suggestions about your travel experiences with us. Your input helps us improve and create a better travel experience for everyone.</p>
-        <button onclick="sendFeedback()">Send Feedback</button>
-    </section>
+    <h2>Feedback</h2>
+    <p>We value your feedback! Share your thoughts and suggestions about your travel experiences with us. Your input helps us improve and create a better travel experience for everyone.</p><br><br>
+    
+    <form id="feedbackForm">
+        <label for="feedbackMessage"><h3>Share Your Feedback with us:</h3></label>
+        <textarea id="feedbackMessage" rows="4" cols="50"></textarea>
+        <br>
+        <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+    </form>
+</section>
     <footer>
         <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
     </footer>
