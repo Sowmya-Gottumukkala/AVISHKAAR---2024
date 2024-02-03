@@ -117,3 +117,35 @@ function redirectToGoogleMaps(type) {
 
             window.open(googleMapsUrl, '_blank');
         }
+
+document.addEventListener('DOMContentLoaded', function () {
+        // Function to open websites
+        function openWebsite(url) {
+            window.open(url, '_blank');
+        }
+
+        // Update the click event handlers for images
+        document.getElementById('rtc-link').addEventListener('click', function () {
+            openWebsite('https://www.redbus.in/'); // Replace with the actual URL
+        });
+
+        document.getElementById('car-rental-link').addEventListener('click', function () {
+            openWebsite('https://www.discovercars.com/'); // Replace with the actual URL
+        });
+
+        document.getElementById('rapido-link').addEventListener('click', function () {
+            openWebsite('https://www.rapido.bike/'); // Replace with the actual URL
+        });
+
+        document.getElementById('irctc-link').addEventListener('click', function () {
+            openWebsite('https://www.ixigo.com/trains'); // Replace with the actual URL
+        });
+
+        document.getElementById('swiggy-link').addEventListener('click', function () {
+            openWebsite('https://ride.swiggy.com/'); // Replace with the actual URL
+        });
+
+        document.getElementById('zomato-link').addEventListener('click', function () {
+            openWebsite('https://www.zomato.com/'); // Replace with the actual URL
+        });
+    });
