@@ -3,10 +3,19 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-	background-image: url('https://img.freepik.com/free-photo/green-light-green-blur-gradient-background_1258-83068.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+    background-image: url('https://img.freepik.com/free-photo/abstract-empty-smooth-light-pink-studio-room-background-use-as-montage-product-displaybannertemp_1258-54117.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+h2 {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+h2:hover 
+{
+   transform: scale(1.1);
 }
 
 h2,h1{
@@ -22,6 +31,11 @@ h3
 p{
 	font-size:20px;
 }
+h4{
+	font-size:20px;
+	color:purple;
+}
+
 
 .intro-text {
             font-size: 24px;
@@ -56,7 +70,7 @@ h1#main-heading:hover {
 
 
 header {
-    background-color: #4CAF50;
+    background-color: #AED581;
     color: black;
     text-align: center;
     padding: 20px;
@@ -85,7 +99,7 @@ nav {
 
         nav a {
             text-decoration: none;
-            color: purple;
+            color: #673AB7;
             font-weight: bold;
             transition: color 0.3s ease-in-out; /* Adding a color transition effect */
         }
@@ -103,7 +117,7 @@ nav {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #AED581;
     color: black;
 }
 
@@ -138,13 +152,13 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #4CAF50; /* Green color */
+    background-color: #AED581; /* Green color */
     color: white;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049; /* Darker green color on hover */
+    background-color: #AED581; /* Darker green color on hover */
 }
 #feedbackForm {
         text-align: center;
@@ -163,4 +177,35 @@ button:hover {
     #feedbackForm button {
         margin: 10px auto;
     }
-/* Add more styles as needed */
+/* CSS for Online Booking and Ordering Facility Section */
+#online-facility {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.booking-options,
+.food-ordering-options {
+    margin-top: 30px;
+}
+
+.booking-options a,
+.food-ordering-options a {
+    display: inline-block;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.booking-options img,
+.food-ordering-options img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.booking-options a:hover img,
+.food-ordering-options a:hover img {
+    transform: scale(1.1);
+}
