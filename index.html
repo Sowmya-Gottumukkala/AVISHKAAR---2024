@@ -25,7 +25,7 @@
 	
 	<section id="intro" class="section">
         <div class="intro-text">
-            <h2>Welcome to EcoVoyage: Sustainable Travel Planner</h2>
+            <h2>Welcome to EcoVoyage <br>A Sustainable Travel Planner</h2><br>
             <p>Discover a world of eco-friendly travel experiences that go beyond the ordinary. Immerse yourself in breathtaking landscapes, savor delicious dishes from sustainable restaurants, and embark on eco-conscious journeys. Your adventure begins here.</p><br>
         </div>
         <div class="image-container">
@@ -67,6 +67,59 @@
         </div>
         <!-- You can add more images or other content here -->
     </section>
+	
+	<!-- Updated HTML -->
+<section id="online-facility" class="section">
+    <h2>Online Booking and Ordering Facility</h2>
+
+    <div class="booking-options">
+        <h3>Transportation Booking</h3>
+        <p>Book your transportation online for a convenient and eco-friendly journey.</p>
+
+        <!-- Link to book RTC buses -->
+        <a id="rtc-link" onclick="openGoogleMaps('nearby+rtc+buses')">
+            <img src="https://st.redbus.in/Images/India/ContextualLogin/generic_banner_Ind.png" alt="RTC Buses">
+			<h4>Book Buses</h4>
+        </a>
+
+        <!-- Link to book cars -->
+        <a id="car-rental-link" onclick="openGoogleMaps('nearby+car+rental')">
+            <img src="https://previews.123rf.com/images/zeynurbabayev/zeynurbabayev1710/zeynurbabayev171000032/87569172-online-taxi-service.jpg" alt="Car Rental">
+			<h4>Book Cars</h4>
+        </a>
+
+        <!-- Link to book Rapido rides -->
+        <a id="rapido-link" onclick="openGooglePlayStore('com.rapido.passenger')">
+            <img src="https://www.imgglobalinfotech.com/imgadmin2/images/blog/blogimageHow-Much-Does-It-Cost-to-Develop-An-App-Like-Rapido.webp" alt="Rapido Rides">
+			<h4>Book Rapido Rides</h4>
+        </a>
+
+        <!-- Link to book online trains -->
+        <a id="irctc-link" onclick="openGooglePlayStore('com.irctc.rail.connect')">
+            <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2019-09/30/full/1569790979-4055.jpg" alt="IRCTC Online Trains">
+			<h4>Book Online Trains</h4>
+        </a>
+    </div>
+
+    <div class="food-ordering-options">
+        <h3> Online Food Ordering</h3>
+        <p>Order delicious and sustainable food online from your favorite restaurants.</p>
+
+        <!-- Link to order food on Swiggy -->
+        <a id="swiggy-link" onclick="openAppStore('swiggy')">
+            <img src="https://images.hindi.news18.com/ibnkhabar/uploads/2019/08/swiggy-.jpg" alt="Order on Swiggy">
+			 <h4>Order Food on Swiggy</h4>
+        </a>
+
+        <!-- Link to order food on Zomato -->
+        <a id="zomato-link" onclick="openAppStore('zomato')">
+            <img src="https://static.startuptalky.com/2023/10/Zomato-Marketing-Strategies-StartupTalky.jpg" alt="Order on Zomato">
+			 <h4>Order Food on Zomato</h4>
+        </a>
+    </div>
+</section>
+
+
 
     <section id="contact-us" class="section">
         <h2>Contact Us</h2>
@@ -89,6 +142,7 @@
     <footer>
         <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
     </footer>
+	
 
     <script src="scripts.js"></script>
 </body>
