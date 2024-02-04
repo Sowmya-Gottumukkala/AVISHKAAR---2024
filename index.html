@@ -9,11 +9,11 @@
 <body>
     <header>
          <h1 id="main-heading">Travel Explorer</h1>
-        <nav>
+          <nav>
             <ul>
-            <li><a href="#" onclick="redirectToGoogleMaps('restaurants')">Restaurants</a></li>
-            <li><a href="#" onclick="redirectToGoogleMaps('transportation')">Transportation</a></li>
-            <li><a href="#" onclick="redirectToGoogleMaps('beautiful-areas')">Areas</a></li>
+			 <li><a href="https://www.google.com/maps/search/nearby+beautiful+areas/" onclick="redirectToGoogleMaps('beautiful-areas')">Areas</a></li>
+            <li><a href="https://www.google.com/maps/search/nearby+restaurants/"onclick="redirectToGoogleMaps('restaurants') ">Restaurants</a></li>
+            <li><a href="https://www.google.com/maps/search/nearby+transportation/"onclick="redirectToGoogleMaps('transportation')">Transportation</a></li>
             <li><a href="#contact-us">Contact Us</a></li>
             <li><a href="#feedback">Feedback</a></li>
         </ul>
@@ -29,35 +29,15 @@
             <p>Discover a world of eco-friendly travel experiences that go beyond the ordinary. Immerse yourself in breathtaking landscapes, savor delicious dishes from sustainable restaurants, and embark on eco-conscious journeys. Your adventure begins here.</p><br>
         </div>
         <div class="image-container">
-            <a href="https://www.google.com/maps/search/" target="_blank">
+            <a href="https://www.google.com/maps/@17.4358528,78.4400384,12z?entry=ttu" target="_blank">
                 <img src="https://img.freepik.com/premium-photo/mountainous-environments-with-mountains-you-can-see-remote-highway-from-car-driving_1417-22278.jpg" alt="Eco-friendly Restaurant">
             </a>
         </div>
     </section>
-       <section id="nearby-restaurants" class="section">
-        <h2>Nearby Restaurants</h2>
-        <p>Explore a variety of eco-friendly restaurants near your location. Taste delicious dishes while being mindful of your environmental impact.</p>
-        <div class="image-container">
-            <a href="https://www.google.com/maps/search/nearby+restaurants/">
-                <img src="https://assets.architecturaldigest.in/photos/600847e8274aca243711c8d3/16:9/w_1280,c_limit/restaurant-karjat-eco-friendly-1366x768.jpg" width="1000px" height="300px" alt="Eco-friendly Restaurant">
-            </a>
-        </div>
-        <!-- You can add more images or other content here -->
-    </section>
-
-
-      <section id="transportation-facility" class="section">
-        <h2>Transportation Facility</h2>
-        <p>Discover green transportation options including electric vehicles, bike-sharing programs, and eco-friendly public transport. Travel with minimal environmental impact.</p>
-        <div class="image-container">
-            <a href="https://www.google.com/maps/search/nearby+transportation/">
-                <img src="https://img4.teletype.in/files/f4/b4/f4b44771-40c4-4fdf-804d-da71f58c073b.jpeg" width="1000px" height="300px" alt="Eco-friendly Transportation">
-            </a>
-        </div>
-        <!-- You can add more images or other content here -->
-    </section>
-
-    <section id="beautiful-areas" class="section">
+	
+	
+	
+<section id="beautiful-areas" class="section">
         <h2>Beautiful Areas to Visit</h2>
         <p>Immerse yourself in the beauty of nature by exploring nearby scenic areas. From breathtaking landscapes to serene parks, there's something for every nature lover.</p>
         <div class="image-container">
@@ -68,77 +48,112 @@
         <!-- You can add more images or other content here -->
     </section>
 	
-	<!-- Updated HTML -->
-<section id="online-facility" class="section">
-    <h2>Online Booking and Ordering Facility</h2>
-
+	
+	
+	
+      <section id="transportation-facility" class="section">
+        <h2>Transportation Facility</h2>
+        <p>Discover green transportation options including electric vehicles, bike-sharing programs, and eco-friendly public transport. Travel with minimal environmental impact.</p>
+        <div class="image-container">
+            <a href="https://www.google.com/maps/search/nearby+transportation/">
+                <img src="https://img4.teletype.in/files/f4/b4/f4b44771-40c4-4fdf-804d-da71f58c073b.jpeg" width="1000px" height="300px" alt="Eco-friendly Transportation">
+            </a>
+        </div>
+        <!-- You can add more images or other content here -->
+    </section>
+	
+	<section id="online-facility" class="section">
     <div class="booking-options">
-        <h3>Transportation Booking</h3>
+        <h2>Transportation Booking</h2>
         <p>Book your transportation online for a convenient and eco-friendly journey.</p>
 
         <!-- Link to book RTC buses -->
-        <a id="rtc-link" onclick="openGoogleMaps('nearby+rtc+buses')">
+        <a id="rtc-link" href="https://www.redbus.in/">
             <img src="https://st.redbus.in/Images/India/ContextualLogin/generic_banner_Ind.png" alt="RTC Buses">
-			<h4>Book Buses</h4>
+            <h4>Book Buses</h4>
         </a>
 
         <!-- Link to book cars -->
-        <a id="car-rental-link" onclick="openGoogleMaps('nearby+car+rental')">
+        <a id="car-rental-link" href="https://www.discovercars.com/">
             <img src="https://previews.123rf.com/images/zeynurbabayev/zeynurbabayev1710/zeynurbabayev171000032/87569172-online-taxi-service.jpg" alt="Car Rental">
-			<h4>Book Cars</h4>
+            <h4>Book Cars</h4>
         </a>
 
         <!-- Link to book Rapido rides -->
-        <a id="rapido-link" onclick="openGooglePlayStore('com.rapido.passenger')">
+        <a id="rapido-link" href="https://www.rapido.bike/">
             <img src="https://www.imgglobalinfotech.com/imgadmin2/images/blog/blogimageHow-Much-Does-It-Cost-to-Develop-An-App-Like-Rapido.webp" alt="Rapido Rides">
-			<h4>Book Rapido Rides</h4>
+            <h4>Book Rapido Rides</h4>
         </a>
 
         <!-- Link to book online trains -->
-        <a id="irctc-link" onclick="openGooglePlayStore('com.irctc.rail.connect')">
+        <a id="irctc-link" href="https://www.ixigo.com/trains">
             <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2019-09/30/full/1569790979-4055.jpg" alt="IRCTC Online Trains">
-			<h4>Book Online Trains</h4>
+            <h4>Book Online Trains</h4>
         </a>
     </div>
-
+</section>
+	
+	
+       <section id="nearby-restaurants" class="section">
+        <h2>Nearby Restaurants</h2>
+        <p>Explore a variety of eco-friendly restaurants near your location. Taste delicious dishes while being mindful of your environmental impact.</p>
+        <div class="image-container">
+            <a href="https://www.google.com/maps/search/nearby+restaurants/">
+                <img src="https://assets.architecturaldigest.in/photos/600847e8274aca243711c8d3/16:9/w_1280,c_limit/restaurant-karjat-eco-friendly-1366x768.jpg" width="1000px" height="300px" alt="Eco-friendly Restaurant">
+            </a>
+        </div>
+        <!-- You can add more images or other content here -->
+    </section>
+	
+<!-- Updated HTML -->
+<section id="online-facility" class="section">
     <div class="food-ordering-options">
-        <h3> Online Food Ordering</h3>
+        <h2> Online Food Ordering</h2>
         <p>Order delicious and sustainable food online from your favorite restaurants.</p>
 
         <!-- Link to order food on Swiggy -->
-        <a id="swiggy-link" onclick="openAppStore('swiggy')">
+        <a id="swiggy-link" href="https://ride.swiggy.com/" target="_blank">
             <img src="https://images.hindi.news18.com/ibnkhabar/uploads/2019/08/swiggy-.jpg" alt="Order on Swiggy">
-			 <h4>Order Food on Swiggy</h4>
+            <h4>Order Food on Swiggy</h4>
         </a>
 
         <!-- Link to order food on Zomato -->
-        <a id="zomato-link" onclick="openAppStore('zomato')">
+        <a id="zomato-link" href="https://www.zomato.com/" target="_blank">
             <img src="https://static.startuptalky.com/2023/10/Zomato-Marketing-Strategies-StartupTalky.jpg" alt="Order on Zomato">
-			 <h4>Order Food on Zomato</h4>
+            <h4>Order Food on Zomato</h4>
         </a>
     </div>
 </section>
 
 
 
-    <section id="contact-us" class="section">
-        <h2>Contact Us</h2>
-        <p>Have questions or need assistance? Feel free to reach out to nearby contacts. Click the buttons below to find them on Google Maps with your live location!</p>
-        <button onclick="findNearbyContacts('restaurants')">Find Nearby Restaurants</button>
-        <button onclick="findNearbyContacts('transportation')">Find Nearby Transportation</button>
-    </section><br><br>
+
+<section id="contact-us" class="section">
+    <h2>Contact Us</h2>
+    <p>Have questions or need assistance? Feel free to reach out to nearby contacts. Click the buttons below to find them on Google Maps with your live location!</p>
+    <a href= "https://www.google.com/maps/search/nearby+restaurants/" target="_blank">
+        <button>Find Nearby Restaurants</button>
+    </a>
+    <a href= "https://www.google.com/maps/search/nearby+transportation/" target="_blank">
+        <button>Find Nearby Transportation</button>
+    </a>
+</section>
+
+
 
 <section id="feedback" class="section">
     <h2>Feedback</h2>
     <p>We value your feedback! Share your thoughts and suggestions about your travel experiences with us. Your input helps us improve and create a better travel experience for everyone.</p><br><br>
-    
-    <form id="feedbackForm">
+
+    <form action="mailto:sowmyagottumukkala27@gmail.com" method="post" enctype="text/plain">
         <label for="feedbackMessage"><h3>Share Your Feedback with us:</h3></label>
-        <textarea id="feedbackMessage" rows="4" cols="50"></textarea>
+        <textarea id="feedbackMessage" name="message" rows="4" cols="50"></textarea>
         <br>
-        <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+        <button type="submit">Submit Feedback</button>
     </form>
 </section>
+
+
     <footer>
         <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
     </footer>
